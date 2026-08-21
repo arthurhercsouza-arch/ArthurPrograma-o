@@ -1,0 +1,12 @@
+body {
+    background-color:#ff1919;
+}
+.texto{
+    font-size: 100px;
+    color: blue;
+    text-align: center;
+}
+p{
+    font-size: 30px;
+    color: blueviolet;
+}

@@ -1,8 +1,31 @@
 body {
-    background-color:#ff1919;
+    background-color:#000000;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 3.5;}
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
 }
-.texto{
-    font-size: 100px;
-    color: blue;
-    text-align: center;
+header {
+    height: 70px;
+    display: flex; 
+    align-items: center;   
+    justify-content: space-between;
+    padding: 0 8%;
+    background-color: rgb(78, 63, 63);
+    border: 2px solid white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+}
+.nomedaclasse {
+    background-color: #000000;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    border-color: aqua;
 }

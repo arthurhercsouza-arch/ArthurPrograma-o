@@ -56,24 +56,59 @@ header {
     font-size: 100px;
 }
 .destaque img {
-    width: 75%;
-    display: block;
-    max-width: 800px;
-    border-radius: 5px;
+    width: 100%;
     height: 520px;
-    position: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    padding-top: 40px;
     object-fit: cover;
+    display: block;
 }
 .botao {
     font-size: 30px;
-    background-color: #ddd;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #cb1111, #fc2525);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(37, 117, 252, 0.6);
+    transition: all 0.3s ease;
 }
+
+.botao:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 30px rgba(37, 117, 252, 0.9);
+    background: linear-gradient(135deg, #7b2ff7, #00c6ff);
+}
+
+.botao:active {
+    transform: translateY(0) scale(0.98);
+
+}
+
 .destaque {
     min-height: 520px;
     position: relative;
     overflow: hidden;
+}
+
+.destaque::after {
+    content: ""; 
+    position: absolute;
+    inset: 0;
+    background: 
+        linear-gradient(
+            90deg,
+            rgba( 0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.65),
+            rgb(0, 0, 0, 0.15)
+        );
+}
+
+.destaque-conteudo {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 620px;
 }

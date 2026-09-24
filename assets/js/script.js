@@ -1,19 +1,19 @@
-console.log("Olá caras bacanas")
+const imgsDestaque = [
+  "https://sm.ign.com/t/ign_in/video/s/spider-man/spider-man-2-17-minutes-of-pc-gameplay-4k-60fps-max-settings_vajk.640.jpg",
+  "https://cdn.mos.cms.futurecdn.net/pDHyHFLTRio2fCvUtXYkWo.jpg",
+  "https://thatparkplace.com/wp-content/uploads/2024/10/Spider-Man-2.png"
+  ]
 
-const arthur = "Arthur Herculano"
+let ImagemAtual = 0;
+ 
+const imagem = document.querySelector("#imagemDestaque")
 
-console.log(arthur)
+setInterval(function (){
+  ImagemAtual++;
+  if(ImagemAtual >= imgsDestaque.length){
+    ImagemAtual = 0;
+  }
 
-let fundodetela = "preto"
+  imagem.src = imgsDestaque[ImagemAtual]
 
-console.log(fundodetela)
-
-fundodetela = "Branco"
-
-console.log(fundodetela)
-
-if(fundodetela == "Branco"){
-document.body.style.backgroundColor = "white"
-} else if(fundodetela == "preto"){
-    document.body.style.backgroundColor = "black"
-}
+},5000)
